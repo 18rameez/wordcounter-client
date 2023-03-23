@@ -57,14 +57,14 @@ const History = ({history, updateHistory, token}) => {
     let state = event.target.style.color === 'red' ? false : true
    
     fetch(`${API_URL}/wordcount/favourite/${historyId}`, {
-      method: 'PATCH',
+      method: 'PUT',
       headers :{"content-type" : "application/json",
                 "authorization" : "Bearer " + token
                },
       body : JSON.stringify({state:state})
     })
     .then(response => {
-      console.log(response)
+     
       if(response.ok){
        console.log("updated")
        if(state){
