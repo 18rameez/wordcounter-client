@@ -1,4 +1,4 @@
 
 
 
-export  const API_URL = "http://localhost:4004/api/v1"
+export  const API_URL = "https://wordcounter-1jel.onrender.com/api/v1"
