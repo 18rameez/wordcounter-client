@@ -57,7 +57,7 @@ const History = ({history, updateHistory, token}) => {
     let state = event.target.style.color === 'red' ? false : true
    
     fetch(`${API_URL}/wordcount/favourite/${historyId}`, {
-      method: 'PUT',
+      method: 'POST',
       headers :{"content-type" : "application/json",
                 "authorization" : "Bearer " + token
                },
